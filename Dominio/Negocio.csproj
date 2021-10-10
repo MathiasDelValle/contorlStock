@@ -48,7 +48,8 @@
     <Compile Include="Excepciones\NotFoundUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicios\Autenticacion.cs" />
-    <Compile Include="Servicios\Compras.cs" />
+    <Compile Include="Servicios\ServicioCompras.cs" />
+    <Compile Include="Servicios\ServicioSouvenirs.cs" />
     <Compile Include="Servicios\Souvenirs.cs" />
   </ItemGroup>
   <ItemGroup>

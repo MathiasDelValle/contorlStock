@@ -51,6 +51,27 @@ namespace Repositorio
 
         }
 
+        public bool queryInsertUpdate(string query)
+        {
+            try
+            {
+                MySqlConnection con = this.conectar();
+                con.Open();
+
+                MySqlCommand comando = new MySqlCommand(query, con);
+                int resultado = comando.ExecuteNonQuery();
+
+                con.Close();
+
+                return resultado > 0;
+            }
+            catch (Exception ex)
+            {
+                //Aca guardaria el log de excepcion para tener mas info y luego la lanzo
+                throw new Exception("Error al ejecutar la consulta.");
+            }
+        }
+
 
     }
 }

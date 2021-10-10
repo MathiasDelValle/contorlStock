@@ -28,9 +28,11 @@ namespace InterfazGrafica
                 this.txtUsuario.Text = "";
                 this.txtPass.Text = "";
                 frmMenu.Show();
+                this.lblError.Visible = false;
 
             }catch(Exception ex)
             {
+                this.lblError.Visible = true;
                 MessageBox.Show(ex.Message);
             }
             

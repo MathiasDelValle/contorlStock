@@ -33,7 +33,7 @@
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -70,6 +70,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(147, 20);
             this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.Text = "cris";
             // 
             // txtPass
             // 
@@ -77,24 +78,27 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(147, 20);
             this.txtPass.TabIndex = 4;
+            this.txtPass.Text = "1234";
+            this.txtPass.UseSystemPasswordChar = true;
             // 
-            // label3
+            // lblError
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label3.Location = new System.Drawing.Point(37, 248);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(205, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Las credenciales ingresadas son erroneas";
+            this.lblError.AutoSize = true;
+            this.lblError.BackColor = System.Drawing.SystemColors.Control;
+            this.lblError.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lblError.Location = new System.Drawing.Point(37, 248);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(205, 13);
+            this.lblError.TabIndex = 5;
+            this.lblError.Text = "Las credenciales ingresadas son erroneas";
+            this.lblError.Visible = false;
             // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(288, 297);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.btnIniciarSesion);
@@ -115,7 +119,7 @@
         private System.Windows.Forms.Button btnIniciarSesion;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblError;
     }
 }
 

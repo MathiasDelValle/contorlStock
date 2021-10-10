@@ -13,9 +13,10 @@ namespace Dominio.Servicios
     {
         private RepositorioSouvenir repo = new RepositorioSouvenir();
 
-        public List<Souvenir> listarSouvenirs()
+        public List<Souvenir> listarSouvenirs(bool controlarStock = false)
         {
-            DataTable dataSouvenirs = repo.obtenerSouvenirs();
+
+            DataTable dataSouvenirs = repo.obtenerSouvenirs(stock: controlarStock);
             List<Souvenir> souvenirs = new List<Souvenir>();
             foreach (DataRow row in dataSouvenirs.Rows)
             {

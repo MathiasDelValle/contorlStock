@@ -91,6 +91,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="RepositorioCompra.cs" />
     <Compile Include="RepositorioSouvenir.cs" />
     <Compile Include="RepoUsuario.cs" />
   </ItemGroup>

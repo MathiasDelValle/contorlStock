@@ -20,11 +20,13 @@ namespace InterfazGrafica
         public login frmLogin;
         public ServicioSouvenirs serviSouvenirs;
         public ServicioCompras serviCompras;
+        public Form formularioActivo;
 
         public MenuPrincipal(login frmPadre, Usuario usuLogeado)
         {
             this.frmLogin = frmPadre;
             this.usuLogeado = usuLogeado;
+
             this.serviSouvenirs = new ServicioSouvenirs();
             this.serviCompras = new ServicioCompras();
             InitializeComponent();
@@ -74,5 +76,24 @@ namespace InterfazGrafica
             this.frmLogin.Show();
             this.Dispose();
         }
+
+        private void compraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Listado_compras frmListadoCompras = new Listado_compras();
+            frmListadoCompras.TopLevel = false;
+            List<Compra> compras = serviCompras.listadoCompras();
+            frmListadoCompras.Parent = this;
+
+
+            foreach (Compra c in compras)
+            {
+                string[] newRow = new string[] { c.Id.ToString(), c.Fecha.ToString(), c.Souvenir.ToString(), c.Cantidad.ToString() };
+                frmListadoCompras.tablaSouvenirs.Rows.Add(newRow);
+            }
+
+            frmListadoCompras.Show();
+            
+        }
+
     }
 }

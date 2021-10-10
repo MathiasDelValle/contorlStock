@@ -41,3 +41,5 @@ C:\Users\cferreri\source\repos\Control de Stock\InterfazGrafica\obj\Debug\Interf
 C:\Users\cferreri\source\repos\Control de Stock\InterfazGrafica\obj\Debug\InterfazGrafica.csproj.CopyComplete
 C:\Users\cferreri\source\repos\Control de Stock\InterfazGrafica\obj\Debug\InterfazGrafica.Souvenirs.ListadoSouvenirs.resources
 C:\Users\cferreri\source\repos\Control de Stock\InterfazGrafica\obj\Debug\InterfazGrafica.nuevoSouvenir.resources
+C:\Users\cferreri\source\repos\Control de Stock\InterfazGrafica\obj\Debug\InterfazGrafica.Souvenirs.Listado_compras.resources
+C:\Users\cferreri\source\repos\Control de Stock\InterfazGrafica\obj\Debug\InterfazGrafica.nuevaCompra.resources

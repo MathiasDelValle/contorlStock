@@ -37,7 +37,13 @@ namespace Dominio.Servicios
                 }
 
                 this.usu = usuarioSistema;
-                return true;
+                
+                if(usuarioSistema.getPassword() == password)
+                {
+                    return true;
+                }
+
+                return false;
 
             }catch(Exception ex)
             {

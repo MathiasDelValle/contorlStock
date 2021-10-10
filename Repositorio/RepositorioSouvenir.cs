@@ -12,7 +12,7 @@ namespace Repositorio
     {
         private Conexion bd = new Conexion();
 
-        public DataTable obtenerSouvenirs(int id = 0, string nombre = "")
+        public DataTable obtenerSouvenirs(int id = 0, string nombre = "", bool stock = false)
         {
             string sql = "SELECT * FROM souvenirs ";
             string where = "";
@@ -25,6 +25,18 @@ namespace Repositorio
                 if (nombre != "")
                 {
                     where = " WHERE nombre = '" + nombre + "'";
+                }
+
+                if(stock)
+                {
+                    if(where == "")
+                    {
+                        where = " WHERE stock > 0 ";
+                    }
+                    else
+                    {
+                        where += " AND stock > 0"; 
+                    }
                 }
             }
 

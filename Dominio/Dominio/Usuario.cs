@@ -43,6 +43,11 @@ namespace Dominio.Dominio
             return this.usuario;
         }
 
+        public string getPassword()
+        {
+            return this.password;
+        }
+
 
     }
 }

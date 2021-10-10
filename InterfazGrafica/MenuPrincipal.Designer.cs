@@ -73,20 +73,21 @@
             // souvenirsToolStripMenuItem
             // 
             this.souvenirsToolStripMenuItem.Name = "souvenirsToolStripMenuItem";
-            this.souvenirsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.souvenirsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.souvenirsToolStripMenuItem.Text = "Souvenirs";
             this.souvenirsToolStripMenuItem.Click += new System.EventHandler(this.souvenirsToolStripMenuItem_Click);
             // 
             // compraToolStripMenuItem
             // 
             this.compraToolStripMenuItem.Name = "compraToolStripMenuItem";
-            this.compraToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.compraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.compraToolStripMenuItem.Text = "Compra";
+            this.compraToolStripMenuItem.Click += new System.EventHandler(this.compraToolStripMenuItem_Click);
             // 
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar sesion";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 

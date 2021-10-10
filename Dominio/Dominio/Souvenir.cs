@@ -56,5 +56,11 @@ namespace Dominio.Dominio
             return true;
             //repo.borrar(this.id);
         }
+
+        override
+        public string ToString()
+        {
+            return this.nombre;
+        }
     }
 }
